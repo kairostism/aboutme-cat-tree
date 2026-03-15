@@ -154,6 +154,12 @@ body {
   pointer-events: none;
 }
 
+#credit em {
+  color: #b080b0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
 .p1 { top: 8%;    left: 4%;   transform: rotate(15deg); }
 .p2 { top: 20%;   right: 5%;  transform: rotate(-40deg); }
 .p3 { bottom: 15%; left: 7%;  transform: rotate(75deg); }
