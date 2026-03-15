@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 110">
+  <!-- Main pad -->
+  <ellipse cx="50" cy="75" rx="25" ry="20" fill="#e87de8"/>
+  <!-- Toe beans -->
+  <ellipse cx="22" cy="45" rx="10" ry="12" fill="#e87de8"/>
+  <ellipse cx="40" cy="35" rx="10" ry="12" fill="#e87de8"/>
+  <ellipse cx="60" cy="35" rx="10" ry="12" fill="#e87de8"/>
+  <ellipse cx="78" cy="45" rx="10" ry="12" fill="#e87de8"/>
+</svg>
