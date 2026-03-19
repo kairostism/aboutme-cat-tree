@@ -9,6 +9,7 @@ There is nothing really special to this site, and I only have this repo open in 
 
 
 **Acknowledgements:**
-SVGs were sourced from here: https://simpleicons.org/
 
-Profile Picture Art by Edward: https://www.youtube.com/@Edwardtherat/
+- SVGs were sourced from here: https://simpleicons.org/
+
+- Profile Picture Art by Edward: https://www.youtube.com/@Edwardtherat/
