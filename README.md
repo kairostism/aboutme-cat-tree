@@ -1,5 +1,3 @@
-**THIS IS THE TESTING BRANCH-ANY CHANGES MADE HERE MAY NOT BE FINAL**
-
 My Website That's Literally An About Me
 
 Current site is hosted here: https://kairoscattree.vercel.app

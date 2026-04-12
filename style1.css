@@ -3,6 +3,8 @@
   to   { opacity: 1; }
 }
 
+/* Formatting for background elements. */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -48,6 +50,8 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
+
+/* Formatting for some text elements. */
 
 #IntroCard h2 {
   color: #e87de8;
@@ -160,6 +164,8 @@ body {
   line-height: 1.6;
 }
 
+/* kitty beans :3 */
+
 .p1 { top: 8%;    left: 4%;   transform: rotate(15deg); }
 .p2 { top: 20%;   right: 5%;  transform: rotate(-40deg); }
 .p3 { bottom: 15%; left: 7%;  transform: rotate(75deg); }
@@ -229,3 +235,5 @@ body {
     height: 16px;
   }
 }
+
+/* These comments were added way after I made the site. I'm too lazy to reread this code again I hate CSS. */
