@@ -15,7 +15,7 @@ body {
   display: grid;
   place-items: center;
   font-family: sans-serif;
-  overflow-y: auto;
+  overflow-y: hidden;
   animation: fadein 1s ease-in;
 }
 
