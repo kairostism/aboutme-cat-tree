@@ -1,262 +1,305 @@
 @keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  background-color: #321332;
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  font-family: sans-serif;
-  overflow: hidden;
-  animation: fadein 1s ease-in;
+    background-color: #321332;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: sans-serif;
+    overflow-y: hidden;
+    animation: fadein 1s ease-in;
 }
 
 #card {
-  background-color: #5a1f5a;
-  border-radius: 24px;
-  margin: 65px;
-  padding: 60px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 60px;
-  width: calc(100% - 130px);
-  height: calc(100vh - 130px);
+    background-color: #5a1f5a;
+    border-radius: 24px;
+    margin: 65px;
+    padding: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    width: calc(100% - 130px);
+    height: calc(100vh - 130px);
 }
 
 #IntroCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex: 1;
-  gap: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    gap: 14px;
 }
 
 #IntroCard img {
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
-  object-fit: cover;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 #IntroCard p {
-  color: #cca0cc;
-  font-size: 1rem;
+    color: #cca0cc;
+    font-size: 1rem;
 }
 
 #IntroCard h2 {
-  color: #e87de8;
-  font-size: 2rem;
+    color: #e87de8;
+    font-size: 2rem;
 }
 
 #IntroCard em {
-  color: #b080b0;
-  font-size: 1rem;
-  line-height: 1.6;
+    color: #b080b0;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 #right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1;
-  gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    gap: 30px;
 }
 
 #links h1 {
-  color: white;
-  font-size: 2.8rem;
-  margin-bottom: 10px;
+    color: white;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
 }
 
 #links p {
-  color: white;
-  font-size: 1.1rem;
+    color: white;
+    font-size: 1.1rem;
 }
 
 #social-buttons {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(95px, 150px));
-  gap: 4px;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(95px, 150px));
+    gap: 4px;
 }
 
 /* w3schools had nothing to do with this button stuff. do i know what any of this stuff does? err no my teacher never taught me */
 
 .btn-social {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 12px;
-  background-color: #7a2f7a;
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-  transition: background-color 0.2s;
-  aspect-ratio: 1/1;
-  container-type: inline-size;
-  overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    background-color: #7a2f7a;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+    aspect-ratio: 1/1;
+    container-type: inline-size;
+    overflow: hidden;
 }
 
 .btn-social:hover {
-  background-color: #9a3f9a;
+    background-color: #9a3f9a;
 }
 
 .btn-about {
-  display: block;
-  padding: 22px;
-  background-color: #f06ab0;
-  color: white;
-  text-decoration: none;
-  border-radius: 14px;
-  font-size: 1.3rem;
-  font-weight: bold;
-  text-align: center;
-  transition: background-color 0.2s;
+    display: block;
+    padding: 22px;
+    background-color: #f06ab0;
+    color: white;
+    text-decoration: none;
+    border-radius: 14px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.2s;
 }
 
 .btn-about:hover {
-  background-color: #e055a0;
+    background-color: #e055a0;
 }
 
 .btn-social img {
-  width: clamp(24px, 38cqi, 44px);
-  height: clamp(24px, 38cqi, 44px);
-  display: block;
-  filter: brightness(0) invert(1);
+    width: clamp(24px, 38cqi, 44px);
+    height: clamp(24px, 38cqi, 44px);
+    display: block;
+    filter: brightness(0) invert(1);
 }
 
 /* kitty beans :3 */
 
 .paw {
-  position: fixed;
-  width: 60px;
-  opacity: 0.15;
-  pointer-events: none;
+    position: fixed;
+    width: 60px;
+    opacity: 0.15;
+    pointer-events: none;
 }
 
-.p1 { top: 8%;  left: 4%;   transform: rotate(15deg); }
-.p2 { top: 20%; right: 5%;  transform: rotate(-40deg); }
-.p3 { bottom: 15%; left: 7%;  transform: rotate(75deg); }
-.p4 { bottom: 10%; right: 10%; transform: rotate(-20deg); }
-.p5 { top: 13%; right: 7%;   transform: rotate(6deg); }
-.p6 { top: 55%; left: 29%;   transform: rotate(-61deg); }
-.p7 { top: 80%; right: 14%;   transform: rotate(122deg); }
-.p8 { top: 30%; left: 7%;   transform: rotate(-60deg); }
-.p9 { top: 2%; right: 6%;   transform: rotate(88deg); }
-.p0 { top: 40%; left: 19%;   transform: rotate(-156deg); }
+.p1 {
+    top: 8%;
+    left: 4%;
+    transform: rotate(15deg);
+}
+.p2 {
+    top: 20%;
+    right: 5%;
+    transform: rotate(-40deg);
+}
+.p3 {
+    bottom: 15%;
+    left: 7%;
+    transform: rotate(75deg);
+}
+.p4 {
+    bottom: 10%;
+    right: 10%;
+    transform: rotate(-20deg);
+}
+.p5 {
+    top: 13%;
+    right: 7%;
+    transform: rotate(6deg);
+}
+.p6 {
+    top: 55%;
+    left: 29%;
+    transform: rotate(-61deg);
+}
+.p7 {
+    top: 80%;
+    right: 14%;
+    transform: rotate(122deg);
+}
+.p8 {
+    top: 30%;
+    left: 7%;
+    transform: rotate(-60deg);
+}
+.p9 {
+    top: 2%;
+    right: 6%;
+    transform: rotate(88deg);
+}
+.p0 {
+    top: 40%;
+    left: 19%;
+    transform: rotate(-156deg);
+}
 
 .Button-Text {
-  font-size: clamp(10px, 16cqi, 20px);
-  text-align: center;
-  overflow-wrap: break-word;
-  word-break: break-word;
-  line-height: 1.2;
-  width: 100%;
-  margin: 0;
+    font-size: clamp(10px, 16cqi, 20px);
+    text-align: center;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    line-height: 1.2;
+    width: 100%;
+    margin: 0;
 }
 
 /* Good evening reader! Programming is hard like 80% of everything here I "borrowed" from different sites. I mean how can you prove that I actually stole your code? What if I typed all this myself? What if? Okay you can stop reading now. */
 
-@media (max-width: 1024px) {
-  body {
-    height: auto;
-    min-height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding: 20px;
-  }
+@media (max-width: 1024px), (hover: none) and (pointer: coarse) {
+    body {
+        height: auto;
+        min-height: 100vh;
+        overflow-y: auto;
+        padding: 20px;
+    }
 
-  #card {
-    flex-direction: column;
-    margin: 0;
-    padding: 30px 20px;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    min-height: unset;
-    gap: 30px;
-  }
+    #card {
+        flex-direction: column;
+        margin: 0;
+        padding: 30px 20px;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: unset;
+        gap: 30px;
+    }
 
-  #IntroCard {
-    width: 100%;
-    gap: 10px;
-  }
+    #IntroCard {
+        width: 100%;
+        gap: 10px;
+    }
 
-  #IntroCard img {
-    width: 130px;
-    height: 130px;
-  }
+    #IntroCard img {
+        width: 130px;
+        height: 130px;
+    }
 
-  #IntroCard h2 {
-    font-size: 1.4rem;
-  }
+    #IntroCard h2 {
+        font-size: 1.4rem;
+    }
 
-  #IntroCard em {
-    font-size: 0.9rem;
-  }
+    #IntroCard em {
+        font-size: 0.9rem;
+    }
 
-  #right {
-    width: 100%;
-    gap: 16px;
-  }
+    #right {
+        width: 100%;
+        gap: 16px;
+    }
 
-  #links h1 {
-    font-size: 1.8rem;
-  }
+    #links h1 {
+        font-size: 1.8rem;
+    }
 
-  #links p {
-    font-size: 0.95rem;
-  }
+    #links p {
+        font-size: 0.95rem;
+    }
 
-  #social-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
+    #social-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
 
-  .btn-social {
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 12px;
-    padding: 12px 16px;
-    flex: unset;
-    aspect-ratio: auto;
-    container-type: normal;
-    width: 100%;
-  }
+    .btn-social {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 12px;
+        padding: 12px 16px;
+        flex: unset;
+        aspect-ratio: auto;
+        container-type: normal;
+        width: 100%;
+    }
 
-  .btn-about {
-    padding: 16px;
-    font-size: 1.1rem;
-  }
+    .btn-about {
+        padding: 16px;
+        font-size: 1.1rem;
+    }
 
-  .paw {
-    width: 30px;
-  }
-  .btn-social img {
-	width: 32px;
-	height: 32px;
-	display: block;
-  }
-  .Button-Text {
-    font-size: 1rem;
-    text-align: left;
-    overflow-wrap: normal;
-    word-break: normal;
-    hyphens: none;
-    width: auto;
-  }
+    .paw {
+        width: 30px;
+    }
+    .btn-social img {
+        width: 32px;
+        height: 32px;
+        display: block;
+    }
+    .Button-Text {
+        font-size: 1rem;
+        text-align: left;
+        overflow-wrap: normal;
+        word-break: normal;
+        hyphens: none;
+        width: auto;
+    }
 }
